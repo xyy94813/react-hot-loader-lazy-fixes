@@ -1,9 +1,14 @@
+import { setConfig } from 'react-hot-loader';
 import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { renderRoutes } from 'react-router-config';
 
 import routes from './common/routes';
+
+setConfig({
+  trackTailUpdates: false,
+})
 
 function App() {
   return (
